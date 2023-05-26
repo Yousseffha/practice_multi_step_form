@@ -1,0 +1,107 @@
+.first-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 250px);
+    padding-top: 30px;
+    height: 500px;
+    position: relative;
+}
+.info {
+    width: 85%;
+}
+.info .info__title {
+    color: var(--InfoTitleColor);
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+.info .info__instruction {
+    color: var(--InfoInstructionColor);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.first-step .form {
+    width: 85%;
+    margin-top: 20px;
+}
+.form-field {
+    margin: 10px 0;
+    position: relative;
+}
+.first-step .form .form-field__error-message {
+    color: var(--ErrorColor);
+    letter-spacing: 1px;
+    font-size: 13px;
+    position: absolute;
+    right: 3px;
+    display: none;
+}
+.first-step .form label {
+    color: var(--InfoTitleColor);
+    letter-spacing: 1px;
+    display: block;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.first-step .form input {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: 2px solid var(--Gray);
+    border-radius: 7px;
+    outline-color: transparent;
+    transition: var(--MainTransition);
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+.first-step .form input:focus {
+    outline-color: var(--InputBorder);
+}
+.first-step-next__button {
+    position: absolute;
+    right: calc(10% - 15px);
+    bottom: 35px;
+}
+.first-step-next__button button {
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+    background-color: var(--ButtonColor);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--MainTransition);
+}
+.first-step-next__button button:hover {
+    background-color: #174a8b;
+}
+
+@media(max-width:749px) {
+    .first-step {
+        height: fit-content;
+        padding-bottom: 30px;
+        width: 90vw;
+        justify-content: flex-start;
+        margin: 0 auto;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.219);
+        transform: translateY(-6%);
+        background-color: #fff;
+        border-radius: 9px;
+    }
+    .first-step-next__button {
+        top: calc((100vh - (20vh + 8vh)) - 2px);
+        left: -5vw;
+        width: 100vw;
+        height: 20%;
+        background-color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5px 10px;
+        box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.166);
+    }
+    .first-step-next__button button {
+        padding: 10px 15px;
+    }
+}

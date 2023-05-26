@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="side-bar">
+        <ul class="step">
+          <li>
+            <div class="step__number active" >1</div>
+            <div class="info">
+              <span>step 1</span>
+              <h4 class="step__title">your info</h4>
+            </div>
+          </li>
+        </ul>
+        <ul class="step">
+          <li>
+            <div class="step__number">2</div>
+            <div class="info">
+              <span>step 2</span>
+              <h4 class="step__title">select plan</h4>
+            </div>
+          </li>
+        </ul>
+        <ul class="step">
+          <li>
+            <div class="step__number">3</div>
+            <div class="info">
+              <span>step 3</span>
+              <h4 class="step__title">add-ons</h4>
+            </div>
+          </li>
+        </ul>
+        <ul class="step">
+          <li>
+            <div class="step__number">4</div>
+            <div class="info">
+              <span>step 4</span>
+              <h4 class="step__title">summary</h4>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <section class="first-step">
+        <div class="info">
+          <h2 class="info__title">Personal info</h2>
+          <span class="info__instruction">
+            Please provide your name, email address, and phone number
+          </span>
+        </div>
+        <form action="" class="form">
+          <div class="form-field">
+            <span class="form-field__error-message"
+              >This field is required</span
+            >
+            <label for="">name:</label>
+            <input type="text" placeholder="e.g. Stephen King" />
+          </div>
+          <div class="form-field">
+            <span class="form-field__error-message"
+              >This field is required</span
+            >
+            <label for="">email address:</label>
+            <input type="text" placeholder="e.g. staphenking@lorem.com" />
+          </div>
+          <div class="form-field">
+            <span class="form-field__error-message"
+              >This field is required</span
+            >
+            <label for="">phone number:</label>
+            <input type="text" placeholder="e.g. +1 234 567 890" />
+          </div>
+        </form>
+        <div class="first-step-next__button">
+          <button id="next">next step</button>
+        </div>
+      </section>
+      <section class="second-step">
+        <div class="info">
+          <h2 class="info__title">Select your plan</h2>
+          <span class="info__instruction">
+            You have the option of monthly or yearly billing
+          </span>
+        </div>
+        <div class="plans">
+          <div class="box">
+            <div class="image">
+              <img src="/images/second step/icon-arcade.svg" alt="arcade" />
+            </div>
+            <div class="plan-info">
+              <h4>arcade</h4>
+              <span>$9/mo</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="/images/second step/icon-advanced.svg" alt="advanced" />
+            </div>
+            <div class="plan-info">
+              <h4>advanced</h4>
+              <span>$12/mo</span>
+            </div>
+          </div>
+          <div class="box">
+            <div class="image">
+              <img src="/images/second step/icon-pro.svg" alt="pro" />
+            </div>
+            <div class="plan-info">
+              <h4>pro</h4>
+              <span>$15/mo</span>
+            </div>
+          </div>
+        </div>
+        <div class="billing-method">
+          <span>monthly</span>
+          <span class="check"></span>
+          <span>yearly</span>
+        </div>
+
+        <div class="plans-next__buttons">
+          <button class="go-back" id="back">go back</button>
+          <button class="next-step" id="next">next step</button>
+        </div>
+      </section>
+      <section class="third-step">
+        <div class="info">
+          <h2 class="info__title">Pick add-ons</h2>
+          <span class="info__instruction">
+            You have the option of monthly or yearly billing
+          </span>
+        </div>
+        <div class="benifits">
+          <div class="box">
+            <div class="check-box">
+              <input type="checkbox" />
+            </div>
+            <div class="benifits-info">
+              <h4>Online service</h4>
+              <span>Access to multiplayer games</span>
+            </div>
+            <div class="pricing">+$10/mo</div>
+          </div>
+          <div class="box">
+            <div class="check-box">
+              <input type="checkbox" />
+            </div>
+            <div class="benifits-info">
+              <h4>Large storage</h4>
+              <span>Extra 1Tb cloud save</span>
+            </div>
+            <div class="pricing">+$20/mo</div>
+          </div>
+          <div class="box">
+            <div class="check-box">
+              <input type="checkbox" />
+            </div>
+            <div class="benifits-info">
+              <h4>Customizable Profile</h4>
+              <span>Custom theme on your profile</span>
+            </div>
+            <div class="pricing">+$20/mo</div>
+          </div>
+        </div>
+        <div class="plans-next__buttons">
+          <button class="go-back" id="back">go back</button>
+          <button class="next-step" id="next">next step</button>
+        </div>
+      </section>
+      <section class="fourth-step">
+        <div class="info">
+          <h2 class="info__title">Select your plan</h2>
+          <span class="info__instruction">
+            You have the option of monthly or yearly billing
+          </span>
+        </div>
+        <div class="result">
+          <div class="box">
+            <div class="plan-and-change-btn">
+              <div class="plan">Acrade</div>
+              <div class="change-btn">change</div>
+            </div>
+            <div class="price">$90/yr</div>
+          </div>
+          <div class="box">
+            <div class="benifit-name">
+            </div>
+            <div class="benifit-price">
+            </div>
+          </div>
+          <div class="total">
+            <div class="plan-name">
+              Total <span></span>
+            </div>
+            <div class="plan-price">
+              $120/yr
+            </div>
+          </div>
+        </div>
+        <div class="plans-next__buttons">
+          <button class="go-back" id="back">go back</button>
+          <button class="confirm" id="next">confirm</button>
+        </div>
+      </section>
+      <section class="finish">
+        <div class="image">
+          <img src="/images/icon-thank-you.svg" alt="">
+        </div>
+        <div class="info">
+          <h2 class="info__title">Thank you!</h2>
+          <span class="info__instruction">
+            thanks for confirming your subscription! we hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com
+          </span>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+.finish {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 250px);
+    height: 500px;
+    text-align: center;
+}
+.finish .image {
+    padding-bottom: 25px;
+}
+.finish .info__title {
+    margin-bottom: 10px;
+}
+@media(max-width:749px) {
+    .finish {
+        padding-top: 10px;
+        height: fit-content;
+        padding-bottom: 30px;
+        width: 90vw;
+        justify-content: flex-start;
+        margin: 0 auto;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.219);
+        transform: translateY(-6%);
+        background-color: #fff;
+        border-radius: 9px;
+    }
+}

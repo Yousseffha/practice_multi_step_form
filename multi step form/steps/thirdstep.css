@@ -1,0 +1,120 @@
+.third-step {
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 250px);
+    padding-top: 30px;
+    height: 500px;
+    position: relative;
+    display: none;
+}
+.third-step .benifits {
+    width: 85%;
+    margin-top: 35px;
+}
+.third-step .benifits .box {
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    border: 2px solid var(--Gray);
+    margin-bottom: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: var(--MainTransition);
+    position: relative;
+}
+.third-step .benifits .box:hover {
+    border-color: var(--InputBorder);
+}
+.third-step .check-box {
+    padding: 0 25px 0 5px;
+}
+.third-step .benifits-info h4 {
+    font-size: 14px;
+    color: var(--InfoTitleColor);
+    font-weight: 600;
+}
+.third-step .benifits-info span {
+    font-size: 12px;
+    color: var(--InfoInstructionColor);
+}
+.third-step .box .pricing {
+    position: absolute;
+    right: 15px;
+    font-size: 13px;
+    color: var(--InputBorder);
+}
+.third-step .plans-next__buttons {
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+.third-step .plans-next__buttons .next-step {
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+    background-color: var(--ButtonColor);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--MainTransition);
+}
+.third-step .plans-next__buttons .next-step:hover {
+    background-color: #174a8b;
+}
+.third-step .plans-next__buttons .go-back {
+    background-color: transparent;
+    border: none;
+    color: #8f8f99;
+    text-transform: capitalize;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: var(--MainTransition);
+    font-weight: 500;
+}
+.third-step .plans-next__buttons .go-back:hover {
+    color: var(--ButtonColor);
+}
+.selected {
+    border-color: var(--InputBorder) !important;
+}
+
+@media(max-width:749px) {
+    .third-step {
+        height: fit-content;
+        padding-bottom: 30px;
+        width: 90vw;
+        justify-content: flex-start;
+        margin: 0 auto;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.219);
+        transform: translateY(-6%);
+        background-color: #fff;
+        border-radius: 9px;
+    }
+    .third-step .check-box {
+        padding: 0 15px;
+    }
+    .third-step .benifits-info h4 {
+        font-size: 12px;
+    }
+    .third-step .benifits-info span {
+        font-size: 10px;
+    }
+    .third-step .box .pricing {
+        font-size: 11px;
+    }
+    .third-step .plans-next__buttons {
+        top: calc((100vh - (20vh + 8vh)) - 2px);
+        left: -5vw;
+        width: 100vw;
+        height: 20%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.166);
+    }
+}

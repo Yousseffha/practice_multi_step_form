@@ -1,0 +1,123 @@
+.fourth-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 250px);
+    padding-top: 30px;
+    height: 500px;
+    position: relative;
+    display: none;
+}
+.fourth-step .result {
+    width: 85%;
+    margin-top: 35px;
+}
+.fourth-step .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--Gray);
+    margin-bottom: -6px;
+    border-radius: 5px;
+}
+.fourth-step .box .plan {
+    color: var(--InfoTitleColor);
+    font-size: 14px;
+    font-weight: 600;
+}
+.fourth-step .box .change-btn {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #9e9ea6;
+    text-decoration: underline 1px  #9e9ea6;
+    cursor: pointer;
+}
+.fourth-step .box .price {
+    font-size: 14px;
+    color: var(--InfoTitleColor);
+    font-weight: 600;
+}
+.fourth-step .box .benifit-name div {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #9e9ea6;
+    margin-bottom: 15px ;
+}
+.fourth-step .box .benifit-price div {
+    font-size: 12px;
+    color: var(--InfoTitleColor);
+    margin-bottom: 15px ;
+}
+.fourth-step .total {
+    width: 100%;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.fourth-step .total .plan-name {
+    font-size: 12px;
+    color: #9e9ea6;
+}
+.fourth-step .total .plan-price {
+    color: #4e43e0;
+}
+.fourth-step .plans-next__buttons {
+    position: absolute;
+    bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+.fourth-step .plans-next__buttons .confirm {
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border: none;
+    background-color: #483eff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--MainTransition);
+}
+.fourth-step .plans-next__buttons .confirm:hover {
+    background-color: #174a8b;
+}
+.fourth-step .plans-next__buttons .go-back {
+    background-color: transparent;
+    border: none;
+    color: #8f8f99;
+    text-transform: capitalize;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: var(--MainTransition);
+    font-weight: 500;
+}
+.fourth-step .plans-next__buttons .go-back:hover {
+    color: var(--ButtonColor);
+}
+@media(max-width:749px) {
+    .fourth-step {
+        height: fit-content;
+        padding-bottom: 30px;
+        width: 90vw;
+        justify-content: flex-start;
+        margin: 0 auto;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.219);
+        transform: translateY(-6%);
+        background-color: #fff;
+        border-radius: 9px;
+    }
+    .fourth-step .plans-next__buttons {
+        top: calc((100vh - (20vh + 8vh)) - 2px);
+        left: -5vw;
+        width: 100vw;
+        height: 20%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.166);
+    }
+}

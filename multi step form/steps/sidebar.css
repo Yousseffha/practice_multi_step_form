@@ -1,0 +1,66 @@
+.side-bar {
+    width: 250px;
+    height: 500px;
+    background-image: url(/images/desktop/bg-sidebar-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.side-bar .step li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0 0 10px;
+    margin-bottom: 10px;
+}
+.active {
+    background-color: var(--StepNumberBg);
+    border: none !important;
+    transition: var(--MainTransition);
+}
+.side-bar .step li .step__number {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.side-bar .step li .info span {
+    color: var(--StepColor);
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.step__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media(max-width:749px) {
+    .side-bar {
+        background-image: url(/images/mobile/bg-sidebar-mobile.svg);
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+    }
+    .side-bar .step li  {
+        margin: 0;
+        padding: 0;
+    }
+    .side-bar .step li .step__number {
+        padding: 10px 10px;
+        margin: 0 5px;
+    }
+    .side-bar .step li span {
+        display: none;
+    }
+    .step__title {
+        display: none;
+    }
+}
